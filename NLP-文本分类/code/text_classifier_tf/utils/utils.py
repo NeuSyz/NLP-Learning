@@ -6,11 +6,11 @@ import numpy as np
 # 当前预处理数据集
 DATASET_NAME = "o2o"
 # 停用词路径
-STOPWORDS_PATH = os.path.join(os.path.dirname(os.getcwd()), 'data/stop_words.txt')
+STOPWORDS_PATH = os.path.join(os.getcwd(), 'data/stop_words.txt')
 # 预处理数据保存路径
-OUTPUT_PATH = os.path.join(os.path.dirname(os.getcwd()), 'data/{}'.format(DATASET_NAME))
+OUTPUT_PATH = os.path.join(os.getcwd(), 'data/{}'.format(DATASET_NAME))
 # 预训练词向量路径
-Pre_EMBEDDING_PATH = os.path.join(os.path.dirname(os.getcwd()), 'data/wv/sgns.baidubaike.bigram-char')
+Pre_EMBEDDING_PATH = os.path.join(os.getcwd(), 'data/wv/sgns.baidubaike.bigram-char')
 
 
 def remove_stop_words(inputs):

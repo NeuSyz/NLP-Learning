@@ -2,9 +2,9 @@
 基于tf 1.x 的多种baseline模型的进行单标签文本分类任务(支持二分类和多分类)，模型包括：**textCNN、Bi-LSTM、Bi-LSTM+Attention、HAN(多层注意力网络)、RCNN、Transformer**。
 
 #### 环境要求
-python = 3.6
-tensorflow = 1.12
-scikit-learn
+* python = 3.6
+* tensorflow = 1.12
+* scikit-learn
 
 #### 数据集
 采用竞赛——O2O商铺食品安全相关评论发现数据集
@@ -13,18 +13,19 @@ scikit-learn
 * config文件：配置各种模型的配置参数
 * data：存放训练集和测试集及预处理后文件等
 * ckpt_model：存放checkpoint模型文件
-* utils：提供数据处理的方法
+* utils：数据处理和评估工具包
 * models：存放模型代码
 * train.py：模型训练
 * predict.py：模型预测
 * test.py：模型测试
+* data_processor.py：自定义数据处理文件
 
 #### 数据预处理
 要求训练集和测试集分开存储，对于中文的数据必须先分词，对分词后的词用空格符分开，并且将标签连接到每条数据的尾部，标签和句子用分隔符\<SEP>分开。具体的如下：
 * 今天 的 天气 真好\<SEP>积极
 
 具体做法：
-在utils目录下，data_processor.py设计数据预处理类。
+在项目目录下，data_processor.py设计数据预处理类。
 注意：utils.py中设置自定义数据路径与参数；wv目录下的预训练词向量文件自行准备。
 
 #### 训练模型

@@ -1,0 +1,21 @@
+{
+  "model_name": "textcnn",
+  "epochs": 3,
+  "checkpoint_every": 100,
+  "eval_every": 100,
+  "learning_rate": 1e-3,
+  "optimization": "adam",
+  "embedding_size": 300,
+  "num_filters": 128,
+  "filter_sizes": [2, 3, 4, 5],
+  "sequence_length": 100,
+  "batch_size": 64,
+  "num_classes": 2,
+  "keep_prob": 0.5,
+  "l2_reg_lambda": 0.0,
+  "max_grad_norm": 5.0,
+  "data_path": "data/o2o",
+  "output_path": "outputs/o2o/textcnn",
+  "ckpt_model_path": "ckpt_model/o2o/textcnn"
+}
+

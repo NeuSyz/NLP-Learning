@@ -9,7 +9,6 @@ from utils.data_helper import DataHelper
 
 class Trainer(object):
     def __init__(self, args):
-        super(Trainer, self).__init__()
         self.args = args
         with open(os.path.join(os.getcwd(), args.config_path), "r") as fr:
             self.config = json.load(fr)
@@ -80,7 +79,7 @@ class Trainer(object):
 
                 for batch in self.train_helper.next_batch(self.train_inputs, self.train_labels,
                                                             self.config["batch_size"]):
-                    summary, loss, predictions = self.model.train(sess, batch, self.config["keep_prob"])
+                    _, loss, predictions = self.model.train(sess, batch, self.config["keep_prob"])
 
                     if current_step % 5 == 0:
                         print("train: step: {}, loss: {}".format(current_step, loss))
@@ -96,7 +95,7 @@ class Trainer(object):
                         eval_f_betas = []
                         for eval_batch in self.eval_helper.next_batch(self.eval_inputs, self.eval_labels,
                                                                         self.config["batch_size"]):
-                            eval_summary, eval_loss, eval_predictions = self.model.eval(sess, eval_batch)
+                            _, eval_loss, eval_predictions = self.model.eval(sess, eval_batch)
 
                             eval_losses.append(eval_loss)
                             if self.config["num_classes"] == 1:

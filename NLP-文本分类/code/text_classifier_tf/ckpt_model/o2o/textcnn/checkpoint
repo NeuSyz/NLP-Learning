@@ -1,5 +1,0 @@
-model_checkpoint_path: "D:\\Code\\\345\255\246\344\271\240\347\254\224\350\256\260NLP\\12.\346\226\207\346\234\254\345\210\206\347\261\273\346\250\241\345\236\213\\code\\text_classifier_tf\\ckpt_model/o2o/textcnn\\textcnn-400"
-all_model_checkpoint_paths: "D:\\Code\\\345\255\246\344\271\240\347\254\224\350\256\260NLP\\12.\346\226\207\346\234\254\345\210\206\347\261\273\346\250\241\345\236\213\\code\\text_classifier_tf\\ckpt_model/o2o/textcnn\\textcnn-100"
-all_model_checkpoint_paths: "D:\\Code\\\345\255\246\344\271\240\347\254\224\350\256\260NLP\\12.\346\226\207\346\234\254\345\210\206\347\261\273\346\250\241\345\236\213\\code\\text_classifier_tf\\ckpt_model/o2o/textcnn\\textcnn-200"
-all_model_checkpoint_paths: "D:\\Code\\\345\255\246\344\271\240\347\254\224\350\256\260NLP\\12.\346\226\207\346\234\254\345\210\206\347\261\273\346\250\241\345\236\213\\code\\text_classifier_tf\\ckpt_model/o2o/textcnn\\textcnn-300"
-all_model_checkpoint_paths: "D:\\Code\\\345\255\246\344\271\240\347\254\224\350\256\260NLP\\12.\346\226\207\346\234\254\345\210\206\347\261\273\346\250\241\345\236\213\\code\\text_classifier_tf\\ckpt_model/o2o/textcnn\\textcnn-400"
