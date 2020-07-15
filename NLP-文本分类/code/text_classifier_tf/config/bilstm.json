@@ -1,0 +1,19 @@
+{
+  "model_name": "bilstm",
+  "epochs": 2,
+  "checkpoint_every": 100,
+  "eval_every": 100,
+  "learning_rate": 1e-3,
+  "optimization": "adam",
+  "embedding_size": 300,
+  "hidden_sizes": [256],
+  "sequence_length": 100,
+  "batch_size": 128,
+  "num_classes": 1,
+  "keep_prob": 0.5,
+  "l2_reg_lambda": 0.0,
+  "max_grad_norm": 5.0,
+  "data_path": "data/o2o",
+  "output_path": "outputs/o2o/bilstm",
+  "ckpt_model_path": "ckpt_model/o2o/bilstm"
+}
